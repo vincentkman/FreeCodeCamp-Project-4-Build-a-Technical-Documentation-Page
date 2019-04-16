@@ -1,0 +1,27 @@
+// ======================================
+//  Base Styles
+// ======================================
+//
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+
+p {
+  line-height: ($base__line/$base__font-size);
+}
+
+code {
+  background-color: lighten($light-grey, 22%);
+  display: block;
+  padding: em(20px);
+  margin-left: em(15px);
+  border-radius: $br--default;
+
+}
+
+.wrapper {
+  padding-left: em(15px);
+}

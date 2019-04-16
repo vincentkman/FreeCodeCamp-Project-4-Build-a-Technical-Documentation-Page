@@ -1,0 +1,7 @@
+#main-doc {
+  grid-area: main;
+  margin: em(-470px) em(50px) em(30px) em(50px);
+  @include mq("medium") {
+  margin: 0 em(50px) em(30px) em(50px);
+  }
+}

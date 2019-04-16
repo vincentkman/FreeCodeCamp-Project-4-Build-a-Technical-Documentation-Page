@@ -1,0 +1,40 @@
+.navbar {
+  display: navbar;
+  margin-top: em(50px);
+  @include dim($w: 100%, $h: 35%);
+  overflow-y: auto;
+  z-index: 1;
+  @include mq("medium") {
+    @include pos($pos: sticky, $top: em(-30px));
+    @include dim($w: em(300px), $h: em(730px));
+    overflow-y: visible;
+    margin-top: em(-30px);
+  }
+  @include e(title) {
+    text-align: center;
+    @include pos($pos: absolute, $top: 0, $left: 30%);
+    @include mq("medium") {
+      border-right: em(1px) solid $light-grey;
+      padding: em(10px);
+      margin-top: em(20px);
+      @include pos($pos: sticky, $top: 0, $left: 30%);
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin-left: em(-45px);
+    @include mq("medium") {
+      margin-top: em(-20px);
+    }
+  }
+  @include e(link) {
+    border: em(1px) solid $light-grey;
+    padding: em(15px) em(10px) em(15px) em(30px);
+    color: $black;
+    display: block;
+    @extend %no-txt-undln;
+    @include mq("medium") {
+      padding: em(15px) em(10px) em(13px) em(50px);
+    }
+  }
+}
