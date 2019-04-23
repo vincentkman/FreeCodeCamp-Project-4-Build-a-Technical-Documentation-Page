@@ -1,4 +1,4 @@
-.navbar {
+.navbars {
   display: navbar;
   margin-top: em(50px);
   @include dim($w: 100%, $h: 35%);
@@ -11,12 +11,11 @@
     margin-top: em(-30px);
   }
   @include e(title) {
-    text-align: center;
     @include pos($pos: absolute, $top: 0, $left: 30%);
     @include mq("medium") {
       border-right: em(1px) solid $light-grey;
       padding: em(10px);
-      margin-top: em(20px);
+      margin-top: em(10px);
       @include pos($pos: sticky, $top: 0, $left: 30%);
     }
   }
@@ -34,7 +33,11 @@
     display: block;
     @extend %no-txt-undln;
     @include mq("medium") {
-      padding: em(15px) em(10px) em(13px) em(50px);
+      padding: em(7px) em(10px) em(13px) em(50px);
+    }
+    &:hover {
+      @extend %no-txt-undln;
+      @extend %mouseover;
     }
   }
 }

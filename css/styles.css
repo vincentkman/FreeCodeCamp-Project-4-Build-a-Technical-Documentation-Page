@@ -1,4 +1,4 @@
-.navbar__link {
+.navbars__link:hover, .navbars__link {
   text-decoration: none;
 }
 
@@ -13,6 +13,24 @@
   font-size: 1.25em;
   font-weight: 900;
   letter-spacing: 1px;
+}
+
+.navbars__link:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.navbars__link:hover {
+  cursor: pointer;
+}
+.navbars__link:hover {
+  opacity: 0.5;
+}
+.navbars__link:focus:hover {
+  opacity: 1;
+}
+.navbars__link:active:hover {
+  opacity: 0.8;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -395,11 +413,11 @@ code {
 }
 @media (min-width: 769px) {
   #main-doc {
-    margin: 0 3.125em 1.875em 3.125em;
+    margin: 0.625em 3.125em 1.875em 3.125em;
   }
 }
 
-.navbar {
+.navbars {
   display: navbar;
   margin-top: 3.125em;
   width: 100%;
@@ -408,7 +426,7 @@ code {
   z-index: 1;
 }
 @media (min-width: 769px) {
-  .navbar {
+  .navbars {
     position: sticky;
     top: -1.875em;
     width: 18.75em;
@@ -417,40 +435,39 @@ code {
     margin-top: -1.875em;
   }
 }
-.navbar__title {
-  text-align: center;
+.navbars__title {
   position: absolute;
   top: 0;
   left: 30%;
 }
 @media (min-width: 769px) {
-  .navbar__title {
+  .navbars__title {
     border-right: 0.0625em solid #bbbbbb;
     padding: 0.625em;
-    margin-top: 1.25em;
+    margin-top: 0.625em;
     position: sticky;
     top: 0;
     left: 30%;
   }
 }
-.navbar ul {
+.navbars ul {
   list-style-type: none;
   margin-left: -2.8125em;
 }
 @media (min-width: 769px) {
-  .navbar ul {
+  .navbars ul {
     margin-top: -1.25em;
   }
 }
-.navbar__link {
+.navbars__link {
   border: 0.0625em solid #bbbbbb;
   padding: 0.9375em 0.625em 0.9375em 1.875em;
   color: #0b0b0b;
   display: block;
 }
 @media (min-width: 769px) {
-  .navbar__link {
-    padding: 0.9375em 0.625em 0.8125em 3.125em;
+  .navbars__link {
+    padding: 0.4375em 0.625em 0.8125em 3.125em;
   }
 }
 
